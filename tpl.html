@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TinyMVC 1.0</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<script type="text/javascript">
+	function mysubmit(frm)
+	{
+		var e=document.getElementById('food');
+		var sele =e.options[e.selectedIndex].value;
+		return (sele.length > 0 ) ? frm.submit() : false;
+	}
+	</script>
+	<style type="text/css">
+		*{margin:0;padding:0;font-family:Verdana,sans-serif; font-size:14px;} 
+		.lime{border:1px solid green;color:green;margin:20px;padding:10px;background-color:lime;}
+		.salmon{border:1px solid crimson; color:crimson;margin:20px;padding:10px;background-color:salmon;}
+		label{ line-height:20px; margin:20px; padding:10px; color:#666;}
+		select{ line-height:20px; margin:20px; padding:10px; color:gray;background:#FAFAFA; border:1px solid lightgray; }
+	</style>
+</head>
+<body>
+%s
+</body>
+</html>
