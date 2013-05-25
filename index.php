@@ -1,7 +1,7 @@
-
-
 <?php 
-/*	Tiny MVC, v.1.0.
+/**
+
+	Tiny MVC, v.1.0.
 
 	Author: James Tarleton
 
