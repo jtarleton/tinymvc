@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+<title>TinyMVC 1.0</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<script type="text/javascript">
+function mysubmit(frm)
+{
+	var e=document.getElementById('food');
+	var sele =e.options[e.selectedIndex].value;
+	return (sele.length > 0 ) ? frm.submit() : false;
+}
+</script>
+<style type="text/css">
+	*{margin:0;padding:0;font-family:Trebuchet MS,sans-serif; font-size:12px; background:transparent;} 
+
+	html,
+body {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:#fff;
+}
+select { cursor:pointer;}
+ul { padding-left:12.5px; }
+#body {
+	width:960px;
+	margin:0 auto;
+	background:#ddd;
+}
+#header {
+	padding:10px;
+	background:#fdd;
+}
+#content-1 {
+	float:left;
+	width:220px;
+	padding:10px;
+	background:#bfb;
+}
+#content-2 {
+	float:right;
+	width:720px;
+}
+#content-2-1 {
+	float:left;
+	width:460px;
+	padding:10px;
+	background:#ddf;
+}
+#content-2-2 {
+	float:right;
+	width:220px;
+	padding:10px;
+	background:#dff;
+}
+#footer {
+	padding:10px;
+	background:#ff9; text-align: center;
+}
+/* Easy clearing of floats (see http://positioniseverything.net/easyclearing.html) */
+.cf:after {
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+	content:" ";
+	font-size:0;
+
+}
+/* Does not validate – use conditional comments for this bit if you want valid CSS */
+.cf {*zoom:1;  }
+
+
+
+</style>
+<!-- <link rel="stylesheet" type="text/css" href="rtl.css"> -->
+</head>
+<body>
+	<div id="body">
+		<div id="header" class="cf">
+			<h1>Introduction to the Planets</h1><br />
+			<p>A planet is an astronomical object orbiting a star or stellar remnant that<br /><br /></p>
+<p><ul>
+    <li>is massive enough to be rounded by its own gravity,</li>
+    <li>is not massive enough to cause thermonuclear fusion, and</li>
+    <li>has cleared its neighbouring region of planetesimals.</li></ul><br /></p>
+<p>
+The term planet is ancient, with ties to history, science, mythology, and religion. The planets were originally seen by many early cultures as divine, or as emissaries of deities.</p>
+		</div>
+		<div id="main" class="cf">
